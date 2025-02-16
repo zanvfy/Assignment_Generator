@@ -1,0 +1,29 @@
+{
+    "info": "Answer the following questions: ( 1 X 6 = 6 Marks)",
+    "classified_questions": {
+        "detail": [
+            {
+                "question": "When do the birds travel from northern regions to southern warmer lands and why?"
+            },
+            {
+                "question": "What danger do they face when they are flying over the sea?"
+            },
+            {
+                "question": "What is the migration speed of the birds?"
+            }
+        ],
+        "inference": [
+            {
+                "question": "What happens to these birds at night when they see the lights?"
+            },
+            {
+                "question": "Which is the greatest mystery?"
+            }
+        ],
+        "assumption": [
+            {
+                "question": "When do the birds make their return journey?"
+            }
+        ]
+    }
+}

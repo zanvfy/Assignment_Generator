@@ -1,0 +1,13 @@
+transformers
+torch
+nltk
+textstat
+scikit-learn
+sentencepiece
+spacy
+pandas
+datasets
+accelerate>=0.26.0
+language_tool_python
+openpyxl
+TextBlob

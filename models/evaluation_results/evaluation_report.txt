@@ -1,0 +1,129 @@
+================================================================================
+QUESTION EVALUATION REPORT 20250215_230037 
+================================================================================
+
+REPORT OVERVIEW
+--------------------------------------------------
+This report analyzes the quality and characteristics of generated questions compared to reference questions. It examines various aspects including:
+- Question difficulty and complexity
+- Grammar and language quality
+- Technical content density
+- Similarity to reference questions
+
+EXECUTIVE SUMMARY
+--------------------------------------------------
+Total Generated Questions: 6
+Total Reference Questions: 6
+Average Grammar Score: 1.00 (Scale: 0-1, where 1 indicates perfect grammar)
+
+SIMILARITY ANALYSIS
+--------------------------------------------------
+The following scores indicate how well the generated questions match the reference questions in various aspects:
+
+DIFFICULTY DISTRIBUTION
+--------------------------------------------------
+Question difficulty breakdown (percentage of total):
+Medium: 66.7% (Understanding and application questions)
+Easy: 33.3% (Basic recall and simple concept questions)
+
+DETAILED QUESTION ANALYSIS
+================================================================================
+
+Analysis of individual questions, showing key metrics and quality indicators:
+
+--------------------------------------------------------------------------------
+Question: How many MESBIC directors are from sponsoring corporations?
+Difficulty Level: medium
+Confidence Score: 1.00 (Higher scores indicate more reliable difficulty assessment)
+Grammar Score: 1.00 (1.0 = perfect grammar)
+
+Technical Analysis:
+- Word Count: 9 (Indicates question length and potential complexity)
+- Technical Terms: 3 (Number of domain-specific or advanced vocabulary words)
+
+No grammar issues detected
+
+Tone Analysis:
+- Polarity: 0.50 (-1 = negative, 0 = neutral, 1 = positive tone)
+- Subjectivity: 0.50 (0 = objective, 1 = subjective)
+
+--------------------------------------------------------------------------------
+Question: How many minority entrepreneurs formed new businesses?
+Difficulty Level: medium
+Confidence Score: 1.00 (Higher scores indicate more reliable difficulty assessment)
+Grammar Score: 1.00 (1.0 = perfect grammar)
+
+Technical Analysis:
+- Word Count: 8 (Indicates question length and potential complexity)
+- Technical Terms: 3 (Number of domain-specific or advanced vocabulary words)
+
+No grammar issues detected
+
+Tone Analysis:
+- Polarity: 0.32 (-1 = negative, 0 = neutral, 1 = positive tone)
+- Subjectivity: 0.48 (0 = objective, 1 = subjective)
+
+--------------------------------------------------------------------------------
+Question: What is the meaning of the term “social responsibility”?
+Difficulty Level: easy
+Confidence Score: 0.70 (Higher scores indicate more reliable difficulty assessment)
+Grammar Score: 1.00 (1.0 = perfect grammar)
+
+Technical Analysis:
+- Word Count: 12 (Indicates question length and potential complexity)
+- Technical Terms: 3 (Number of domain-specific or advanced vocabulary words)
+
+No grammar issues detected
+
+Tone Analysis:
+- Polarity: 0.03 (-1 = negative, 0 = neutral, 1 = positive tone)
+- Subjectivity: 0.07 (0 = objective, 1 = subjective)
+
+--------------------------------------------------------------------------------
+Question: How many minority firms do they support?
+Difficulty Level: medium
+Confidence Score: 1.00 (Higher scores indicate more reliable difficulty assessment)
+Grammar Score: 1.00 (1.0 = perfect grammar)
+
+Technical Analysis:
+- Word Count: 8 (Indicates question length and potential complexity)
+- Technical Terms: 2 (Number of domain-specific or advanced vocabulary words)
+
+No grammar issues detected
+
+Tone Analysis:
+- Polarity: 0.50 (-1 = negative, 0 = neutral, 1 = positive tone)
+- Subjectivity: 0.50 (0 = objective, 1 = subjective)
+
+--------------------------------------------------------------------------------
+Question: How many minority staff members feel that minority entrepreneurs and businesses should be judged by established business considerations?
+Difficulty Level: medium
+Confidence Score: 0.70 (Higher scores indicate more reliable difficulty assessment)
+Grammar Score: 1.00 (1.0 = perfect grammar)
+
+Technical Analysis:
+- Word Count: 19 (Indicates question length and potential complexity)
+- Technical Terms: 8 (Number of domain-specific or advanced vocabulary words)
+
+No grammar issues detected
+
+Tone Analysis:
+- Polarity: 0.50 (-1 = negative, 0 = neutral, 1 = positive tone)
+- Subjectivity: 0.50 (0 = objective, 1 = subjective)
+
+--------------------------------------------------------------------------------
+Question: What is the meaning of the term?
+Difficulty Level: easy
+Confidence Score: 0.70 (Higher scores indicate more reliable difficulty assessment)
+Grammar Score: 1.00 (1.0 = perfect grammar)
+
+Technical Analysis:
+- Word Count: 8 (Indicates question length and potential complexity)
+- Technical Terms: 2 (Number of domain-specific or advanced vocabulary words)
+
+No grammar issues detected
+
+Tone Analysis:
+- Polarity: 0.00 (-1 = negative, 0 = neutral, 1 = positive tone)
+- Subjectivity: 0.00 (0 = objective, 1 = subjective)
+
