@@ -451,13 +451,13 @@ def main():
         generator = EnhancedQuestionGenerator()
 
         # Read passage
-        with open("../data/passage.txt", "r", encoding="utf-8") as f:
+        with open("../data/passage1.txt", "r", encoding="utf-8") as f:
             passage = f.read().strip()
             if not passage:
                 raise ValueError("Empty passage file")
 
         # Read JSON configuration
-        with open("classified_questions.json", "r", encoding="utf-8") as f:
+        with open("../data/classified_questions.json", "r", encoding="utf-8") as f:
             data = json.load(f)
             if not isinstance(data, dict):
                 raise ValueError("Invalid JSON format: expected dictionary")

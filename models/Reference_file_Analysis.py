@@ -87,7 +87,7 @@ def classify_questions_using_bert(input_file):
         }
 
         # Save the output to a JSON file
-        with open("classified_questions.json", "w") as json_file:
+        with open("../data/classified_questions.json", "w") as json_file:
             json.dump(output_data, json_file, indent=4)
 
         print("Classified questions have been successfully saved to classified_questions.json")
@@ -102,6 +102,6 @@ def classify_questions_using_bert(input_file):
 
 
 # Specify the input file path
-input_file = "input.txt"
+input_file = "../data/input.txt"
 # Call the function to classify and save questions
 classify_questions_using_bert(input_file)

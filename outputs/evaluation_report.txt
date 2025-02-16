@@ -1,5 +1,5 @@
 ================================================================================
-QUESTION EVALUATION REPORT 20250215_230037 
+QUESTION EVALUATION REPORT 20250216_195250 
 ================================================================================
 
 REPORT OVERVIEW
@@ -23,8 +23,8 @@ The following scores indicate how well the generated questions match the referen
 DIFFICULTY DISTRIBUTION
 --------------------------------------------------
 Question difficulty breakdown (percentage of total):
-Medium: 66.7% (Understanding and application questions)
-Easy: 33.3% (Basic recall and simple concept questions)
+Medium: 50.0% (Understanding and application questions)
+Easy: 50.0% (Basic recall and simple concept questions)
 
 DETAILED QUESTION ANALYSIS
 ================================================================================
@@ -32,7 +32,7 @@ DETAILED QUESTION ANALYSIS
 Analysis of individual questions, showing key metrics and quality indicators:
 
 --------------------------------------------------------------------------------
-Question: How many MESBIC directors are from sponsoring corporations?
+Question: How many islands does Lakshadweep mean in Malayalam?
 Difficulty Level: medium
 Confidence Score: 1.00 (Higher scores indicate more reliable difficulty assessment)
 Grammar Score: 1.00 (1.0 = perfect grammar)
@@ -44,81 +44,17 @@ Technical Analysis:
 No grammar issues detected
 
 Tone Analysis:
-- Polarity: 0.50 (-1 = negative, 0 = neutral, 1 = positive tone)
-- Subjectivity: 0.50 (0 = objective, 1 = subjective)
+- Polarity: 0.09 (-1 = negative, 0 = neutral, 1 = positive tone)
+- Subjectivity: 0.59 (0 = objective, 1 = subjective)
 
 --------------------------------------------------------------------------------
-Question: How many minority entrepreneurs formed new businesses?
-Difficulty Level: medium
-Confidence Score: 1.00 (Higher scores indicate more reliable difficulty assessment)
-Grammar Score: 1.00 (1.0 = perfect grammar)
-
-Technical Analysis:
-- Word Count: 8 (Indicates question length and potential complexity)
-- Technical Terms: 3 (Number of domain-specific or advanced vocabulary words)
-
-No grammar issues detected
-
-Tone Analysis:
-- Polarity: 0.32 (-1 = negative, 0 = neutral, 1 = positive tone)
-- Subjectivity: 0.48 (0 = objective, 1 = subjective)
-
---------------------------------------------------------------------------------
-Question: What is the meaning of the term “social responsibility”?
+Question: Where is Lakshadweep located in Kerala?
 Difficulty Level: easy
 Confidence Score: 0.70 (Higher scores indicate more reliable difficulty assessment)
 Grammar Score: 1.00 (1.0 = perfect grammar)
 
 Technical Analysis:
-- Word Count: 12 (Indicates question length and potential complexity)
-- Technical Terms: 3 (Number of domain-specific or advanced vocabulary words)
-
-No grammar issues detected
-
-Tone Analysis:
-- Polarity: 0.03 (-1 = negative, 0 = neutral, 1 = positive tone)
-- Subjectivity: 0.07 (0 = objective, 1 = subjective)
-
---------------------------------------------------------------------------------
-Question: How many minority firms do they support?
-Difficulty Level: medium
-Confidence Score: 1.00 (Higher scores indicate more reliable difficulty assessment)
-Grammar Score: 1.00 (1.0 = perfect grammar)
-
-Technical Analysis:
-- Word Count: 8 (Indicates question length and potential complexity)
-- Technical Terms: 2 (Number of domain-specific or advanced vocabulary words)
-
-No grammar issues detected
-
-Tone Analysis:
-- Polarity: 0.50 (-1 = negative, 0 = neutral, 1 = positive tone)
-- Subjectivity: 0.50 (0 = objective, 1 = subjective)
-
---------------------------------------------------------------------------------
-Question: How many minority staff members feel that minority entrepreneurs and businesses should be judged by established business considerations?
-Difficulty Level: medium
-Confidence Score: 0.70 (Higher scores indicate more reliable difficulty assessment)
-Grammar Score: 1.00 (1.0 = perfect grammar)
-
-Technical Analysis:
-- Word Count: 19 (Indicates question length and potential complexity)
-- Technical Terms: 8 (Number of domain-specific or advanced vocabulary words)
-
-No grammar issues detected
-
-Tone Analysis:
-- Polarity: 0.50 (-1 = negative, 0 = neutral, 1 = positive tone)
-- Subjectivity: 0.50 (0 = objective, 1 = subjective)
-
---------------------------------------------------------------------------------
-Question: What is the meaning of the term?
-Difficulty Level: easy
-Confidence Score: 0.70 (Higher scores indicate more reliable difficulty assessment)
-Grammar Score: 1.00 (1.0 = perfect grammar)
-
-Technical Analysis:
-- Word Count: 8 (Indicates question length and potential complexity)
+- Word Count: 7 (Indicates question length and potential complexity)
 - Technical Terms: 2 (Number of domain-specific or advanced vocabulary words)
 
 No grammar issues detected
@@ -126,4 +62,68 @@ No grammar issues detected
 Tone Analysis:
 - Polarity: 0.00 (-1 = negative, 0 = neutral, 1 = positive tone)
 - Subjectivity: 0.00 (0 = objective, 1 = subjective)
+
+--------------------------------------------------------------------------------
+Question: What is the smallest union territory in india?
+Difficulty Level: easy
+Confidence Score: 0.70 (Higher scores indicate more reliable difficulty assessment)
+Grammar Score: 1.00 (1.0 = perfect grammar)
+
+Technical Analysis:
+- Word Count: 9 (Indicates question length and potential complexity)
+- Technical Terms: 3 (Number of domain-specific or advanced vocabulary words)
+
+No grammar issues detected
+
+Tone Analysis:
+- Polarity: 0.00 (-1 = negative, 0 = neutral, 1 = positive tone)
+- Subjectivity: 0.00 (0 = objective, 1 = subjective)
+
+--------------------------------------------------------------------------------
+Question: How many permits are required to visit Lakshadweep?
+Difficulty Level: medium
+Confidence Score: 1.00 (Higher scores indicate more reliable difficulty assessment)
+Grammar Score: 1.00 (1.0 = perfect grammar)
+
+Technical Analysis:
+- Word Count: 9 (Indicates question length and potential complexity)
+- Technical Terms: 2 (Number of domain-specific or advanced vocabulary words)
+
+No grammar issues detected
+
+Tone Analysis:
+- Polarity: 0.50 (-1 = negative, 0 = neutral, 1 = positive tone)
+- Subjectivity: 0.50 (0 = objective, 1 = subjective)
+
+--------------------------------------------------------------------------------
+Question: What are the main economic activities of coconut cultivation?
+Difficulty Level: easy
+Confidence Score: 0.70 (Higher scores indicate more reliable difficulty assessment)
+Grammar Score: 1.00 (1.0 = perfect grammar)
+
+Technical Analysis:
+- Word Count: 10 (Indicates question length and potential complexity)
+- Technical Terms: 3 (Number of domain-specific or advanced vocabulary words)
+
+No grammar issues detected
+
+Tone Analysis:
+- Polarity: 0.18 (-1 = negative, 0 = neutral, 1 = positive tone)
+- Subjectivity: 0.27 (0 = objective, 1 = subjective)
+
+--------------------------------------------------------------------------------
+Question: Why is coconut the main crop on the island?
+Difficulty Level: medium
+Confidence Score: 1.00 (Higher scores indicate more reliable difficulty assessment)
+Grammar Score: 1.00 (1.0 = perfect grammar)
+
+Technical Analysis:
+- Word Count: 10 (Indicates question length and potential complexity)
+- Technical Terms: 2 (Number of domain-specific or advanced vocabulary words)
+
+No grammar issues detected
+
+Tone Analysis:
+- Polarity: 0.17 (-1 = negative, 0 = neutral, 1 = positive tone)
+- Subjectivity: 0.33 (0 = objective, 1 = subjective)
 

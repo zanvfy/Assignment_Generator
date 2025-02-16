@@ -514,7 +514,7 @@ class AdvancedQuestionEvaluator:
             with open(report_path, 'w', encoding='utf-8') as f:
                 # Header
                 f.write("=" * 80 + "\n")
-                f.write("QUESTION EVALUATION REPORT "+timestamp+" \n")
+                f.write("QUESTION EVALUATION REPORT " + timestamp + " \n")
                 f.write("=" * 80 + "\n\n")
 
                 # Report Overview
@@ -638,10 +638,8 @@ def main():
         # Initialize evaluator
         evaluator = AdvancedQuestionEvaluator()
 
-        # Setup file paths
-        current_dir = Path(__file__).parent
         generated_file = "../outputs/output_questions.txt"
-        reference_file = current_dir / "input.txt"
+        reference_file = "../data/input.txt"
         output_dir = "../outputs"
 
         # Perform evaluation
