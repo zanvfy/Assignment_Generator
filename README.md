@@ -24,10 +24,7 @@
    - Place your reference content in data/reference_file.txt.
    - Place your passage in data/passage.txt.
 
-**Analyze the Reference**
-   - Run python models/Reference_file_Analysis.py.
-
-**Generate Questions**
+**Generate Questions Using Reference Files and Input Passages**
    - Run python models/Question_generator.py.
    - The generated questions will appear in outputs/.
 
