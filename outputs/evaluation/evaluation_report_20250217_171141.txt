@@ -1,5 +1,5 @@
 ================================================================================
-QUESTION EVALUATION REPORT 20250217_150741 
+QUESTION EVALUATION REPORT 20250217_171141 
 ================================================================================
 
 REPORT OVERVIEW
@@ -64,14 +64,14 @@ Tone Analysis:
 - Subjectivity: 0.34 (0 = objective, 1 = subjective)
 
 --------------------------------------------------------------------------------
-Question: What is a permit to visit Lakshadweep in Kerala?
+Question: Where is the permit issued to visit Lakshadweep?
 Difficulty Level: easy
 Confidence Score: 0.70 (Higher scores indicate more reliable difficulty assessment)
 Grammar Score: 1.00 (1.0 = perfect grammar)
 
 Technical Analysis:
-- Word Count: 10 (Indicates question length and potential complexity)
-- Technical Terms: 3 (Number of domain-specific or advanced vocabulary words)
+- Word Count: 9 (Indicates question length and potential complexity)
+- Technical Terms: 2 (Number of domain-specific or advanced vocabulary words)
 
 No grammar issues detected
 
@@ -96,7 +96,7 @@ Tone Analysis:
 - Subjectivity: 0.50 (0 = objective, 1 = subjective)
 
 --------------------------------------------------------------------------------
-Question: What are the main economic activities of a country?
+Question: What are the main economic activities of the country?
 Difficulty Level: easy
 Confidence Score: 0.70 (Higher scores indicate more reliable difficulty assessment)
 Grammar Score: 1.00 (1.0 = perfect grammar)

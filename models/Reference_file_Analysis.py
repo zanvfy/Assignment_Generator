@@ -22,6 +22,10 @@ def is_valid_question(question: str) -> bool:
 
 
 def classify_questions_using_bert(input_file):
+    """
+    Classify questions from an input file using BERT model.
+    Returns a dictionary containing the passage info and classified questions.
+    """
     # Load a zero-shot classification pipeline
     classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
 
@@ -70,38 +74,34 @@ def classify_questions_using_bert(input_file):
                 question,
                 candidate_labels=["purpose", "detail", "conclusion", "inference", "assumption"]
             )
-
             # Get the top category
             top_category = classification["labels"][0]
 
             # Add the question to the appropriate category
             if top_category not in classified_questions:
                 classified_questions[top_category] = []
-
             classified_questions[top_category].append({"question": question})
 
-        # Convert to JSON format
+        # Create the output data structure
         output_data = {
             "info": info,
             "classified_questions": classified_questions
         }
 
-        # Save the output to a JSON file
-        with open("../data/classified_questions.json", "w") as json_file:
-            json.dump(output_data, json_file, indent=4)
-
-        print("Classified questions have been successfully saved to classified_questions.json")
-        print(f"Questions by category:")
+        # Print summary
+        print("Questions by category:")
         for category, questions in classified_questions.items():
             print(f"{category}: {len(questions)} questions")
 
+        return output_data
+
     except FileNotFoundError:
         print(f"Error: Input file '{input_file}' not found")
+        return None
     except Exception as e:
         print(f"Error processing questions: {str(e)}")
+        return None
 
-
-# Specify the input file path
-input_file = "../data/input.txt"
-# Call the function to classify and save questions
-classify_questions_using_bert(input_file)
+if __name__ == "__main__":
+    input_file = "../data/reference_file.txt"
+    result = classify_questions_using_bert(input_file)

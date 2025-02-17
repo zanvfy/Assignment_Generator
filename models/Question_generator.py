@@ -9,6 +9,7 @@ from datetime import datetime
 from difflib import SequenceMatcher
 from nltk.tokenize import sent_tokenize
 import numpy as np
+from Reference_file_Analysis import classify_questions_using_bert
 from collections import Counter
 
 # Configure logging
@@ -452,26 +453,36 @@ def main():
         generator = EnhancedQuestionGenerator()
 
         # Read passage
-        with open("../data/passage1.txt", "r", encoding="utf-8") as f:
+        with open("../data/passage.txt", "r", encoding="utf-8") as f:
             passage = f.read().strip()
             if not passage:
                 raise ValueError("Empty passage file")
 
-        # Read JSON configuration
-        with open("../data/classified_questions.json", "r", encoding="utf-8") as f:
-            data = json.load(f)
-            if not isinstance(data, dict):
-                raise ValueError("Invalid JSON format: expected dictionary")
+        # # Read JSON configuration
+        # with open("../data/classified_questions.json", "r", encoding="utf-8") as f:
+        #     data = json.load(f)
+        #     if not isinstance(data, dict):
+        #         raise ValueError("Invalid JSON format: expected dictionary")
 
+        # Use the function for refrence file
+        json_result = classify_questions_using_bert("../data/reference_file.txt")
+        print(json_result)
         # Generate questions
-        questions = generator.generate_questions(passage, data)
+        questions = generator.generate_questions(passage, json_result)
 
         # Save output
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         output_file = f"../outputs/generated_questions_{timestamp}.txt"
 
         with open(output_file, "w", encoding="utf-8") as f:
-            f.write(data.get("info", "") + "\n\n")
+            f.write(json_result.get("info", "") + "\n\n")
+            for i, q in enumerate(questions, 1):
+                f.write(f"{i}. {q['question']}\n\n")
+
+        # until the code is automated end to end to read version based output.
+        # the code will continue to overwrite the file for evaluation file reading
+        with open("../outputs/output_questions.txt", "w", encoding="utf-8") as f:
+            f.write(json_result.get("info", "") + "\n\n")
             for i, q in enumerate(questions, 1):
                 f.write(f"{i}. {q['question']}\n\n")
 
