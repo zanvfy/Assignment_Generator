@@ -227,14 +227,15 @@ class EnhancedQuestionGenerator:
         try:
             # Added more input prompts for variety
             input_prompts = [
-                f"generate question: {sentence}",
-                f"create a question about: {sentence}",
-                f"form a question based on this text: {sentence}",
-                f"what question can be asked about: {sentence}",
-                f"ask a question about: {sentence}",
-                f"generate a question to test understanding of: {sentence}",
-                f"create a question to check knowledge of: {sentence}",
-                f"what would you ask about: {sentence}"
+                # f"generate question {sentence}"
+                f"consider the following sentences to generate questions {sentence}"
+                # f"create a question about: {sentence}",
+                # f"form a question based on this text: {sentence}",
+                # f"what question can be asked about: {sentence}",
+                # f"ask a question about: {sentence}",
+                # f"generate a question to test understanding of: {sentence}",
+                # f"create a question to check knowledge of: {sentence}",
+                # f"what would you ask about: {sentence}"
             ]
 
             questions_with_scores = []
