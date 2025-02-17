@@ -1,5 +1,6 @@
 import re
 import json
+import pandas as pd
 import spacy
 import logging
 from typing import List, Dict, Set, Tuple
@@ -7,7 +8,7 @@ from difflib import SequenceMatcher
 import numpy as np
 from pathlib import Path
 from datetime import datetime
-import pandas as pd
+import pandas as pdf
 from collections import defaultdict
 import nltk
 from nltk.tokenize import word_tokenize, sent_tokenize
@@ -158,7 +159,6 @@ class AdvancedQuestionEvaluator:
             'subjectivity': blob.sentiment.subjectivity
         }
 
-    # [Rest of the class methods remain exactly the same as in your original code]
     def load_questions(self, file_path: str) -> List[str]:
         """Load and validate questions from a file."""
         try:
@@ -169,7 +169,6 @@ class AdvancedQuestionEvaluator:
 
             with open(file_path, 'r', encoding='utf-8') as file:
                 content = file.read()
-
             # Extract questions using multiple patterns
             questions = []
 
@@ -381,75 +380,6 @@ class AdvancedQuestionEvaluator:
 
         return float((mean_sim + overlap) / 2)
 
-    # def calculate_similarity_metrics(self, generated_questions: List[str],
-    #                                  reference_questions: List[str]) -> Dict:
-    #     """
-    #     Calculate detailed similarity metrics between generated and reference questions.
-    #     Shows exactly how each question matches against reference questions.
-    #     """
-    #     similarities = []
-    #     detailed_comparisons = []
-    #
-    #     for gen_q in generated_questions:
-    #         gen_doc = self.nlp(gen_q)
-    #         question_sims = []
-    #
-    #         # Track detailed comparisons for this question
-    #         question_comparison = {
-    #             'generated_question': gen_q,
-    #             'comparisons': []
-    #         }
-    #
-    #         for ref_q in reference_questions:
-    #             ref_doc = self.nlp(ref_q)
-    #
-    #             # Calculate semantic similarity using spaCy
-    #             semantic_sim = gen_doc.similarity(ref_doc)
-    #
-    #             # Calculate sequence similarity using SequenceMatcher
-    #             sequence_sim = SequenceMatcher(None, gen_q.lower(), ref_q.lower()).ratio()
-    #
-    #             # Calculate word overlap
-    #             gen_words = set(token.text.lower() for token in gen_doc
-    #                             if not token.is_stop and token.is_alpha)
-    #             ref_words = set(token.text.lower() for token in ref_doc
-    #                             if not token.is_stop and token.is_alpha)
-    #             word_overlap = len(gen_words.intersection(ref_words)) / len(
-    #                 gen_words.union(ref_words)) if gen_words.union(ref_words) else 0
-    #
-    #             # Calculate common words and unique words
-    #             common_words = gen_words.intersection(ref_words)
-    #             gen_unique = gen_words - ref_words
-    #             ref_unique = ref_words - gen_words
-    #
-    #             # Track detailed comparison for this pair
-    #             comparison = {
-    #                 'reference_question': ref_q,
-    #                 'semantic_similarity': semantic_sim,
-    #                 'sequence_similarity': sequence_sim,
-    #                 'word_overlap': word_overlap,
-    #                 'common_words': list(common_words),
-    #                 'generated_unique': list(gen_unique),
-    #                 'reference_unique': list(ref_unique),
-    #                 'average_similarity': (semantic_sim + sequence_sim + word_overlap) / 3
-    #             }
-    #
-    #             question_sims.append(comparison)
-    #             question_comparison['comparisons'].append(comparison)
-    #
-    #         # Get the best matching reference question
-    #         best_match = max(question_sims, key=lambda x: x['average_similarity'])
-    #         similarities.append(best_match)
-    #         detailed_comparisons.append(question_comparison)
-    #
-    #     return {
-    #         'average_semantic_similarity': np.mean([s['semantic_similarity'] for s in similarities]),
-    #         'average_sequence_similarity': np.mean([s['sequence_similarity'] for s in similarities]),
-    #         'average_word_overlap': np.mean([s['word_overlap'] for s in similarities]),
-    #         'matches': similarities,
-    #         'detailed_comparisons': detailed_comparisons
-    #     }
-
     def evaluate_questions(self, generated_file: str, reference_file: str) -> Dict:
         """Perform comprehensive evaluation of generated questions against references."""
         # Load questions
@@ -507,14 +437,14 @@ class AdvancedQuestionEvaluator:
             output_dir.mkdir(exist_ok=True)
 
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            report_path = output_dir / f"evaluation_report.txt"
-            excel_path = output_dir / f"evaluation_metrics.xlsx"
+            report_path = output_dir / f"evaluation_report_{timestamp}.txt"
+            excel_path = output_dir / f"evaluation_metrics_{timestamp}.xlsx"
 
             # Generate main report
             with open(report_path, 'w', encoding='utf-8') as f:
                 # Header
                 f.write("=" * 80 + "\n")
-                f.write("QUESTION EVALUATION REPORT "+timestamp+" \n")
+                f.write("QUESTION EVALUATION REPORT " + timestamp + " \n")
                 f.write("=" * 80 + "\n\n")
 
                 # Report Overview
@@ -638,11 +568,9 @@ def main():
         # Initialize evaluator
         evaluator = AdvancedQuestionEvaluator()
 
-        # Setup file paths
-        current_dir = Path(__file__).parent
         generated_file = "../outputs/output_questions.txt"
-        reference_file = current_dir / "input.txt"
-        output_dir = "../outputs"
+        reference_file = "../data/reference_file.txt"
+        output_dir = "../outputs/evaluation/"
 
         # Perform evaluation
         evaluation_results = evaluator.evaluate_questions(str(generated_file), str(reference_file))
