@@ -17,7 +17,7 @@
 
 ### Project Structure
 
-![img.png](Project_Structure.png)
+![Project_Structure.png](Project_Structure.png)
 
 ### Usage
 **Prepare Input Files**
